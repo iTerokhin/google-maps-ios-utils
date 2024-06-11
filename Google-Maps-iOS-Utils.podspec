@@ -14,14 +14,14 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/googlemaps/google-maps-ios-utils"
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.authors      = "Google Inc."
-  s.platform     = :ios, '13.0'
+  s.platform     = :ios, '15.0'
   s.source       = { :git => "https://github.com/googlemaps/google-maps-ios-utils.git",
-                     :tag => "v#{s.version.to_s}" }
+                     :branch => "yegor/9-0-0" }
   s.requires_arc = true
   s.module_name = "GoogleMapsUtils"
-  s.swift_version = '5.0'
+  s.swift_version = '5.9'
 
-  s.dependency 'GoogleMaps', '~> 7.3'
+  s.dependency 'GoogleMaps', '~> 9.0.0'
   s.static_framework = true
 
   s.subspec 'QuadTree' do |sp|
